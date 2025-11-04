@@ -65,20 +65,21 @@ venv\Scripts\activate       # For Windows
 # Install dependencies
 pip install -r requirements.txt
 
-
+---
 🚀 Usage
 # Run the application
 python app.py
 
 
 Then open your browser and navigate to:
-
+---
 http://localhost:8501
 
-
+---
 Ask natural-language questions about your data and explore real-time insights!
 
 🧱 Architecture
+---
             ┌───────────────────────────┐
             │       User Query          │
             └────────────┬──────────────┘
@@ -94,7 +95,7 @@ Ask natural-language questions about your data and explore real-time insights!
             ┌────────────▼────────────┐
             │ Data Sources (SQL, Docs)│
             └─────────────────────────┘
-
+---
 🔒 Security
 
 Data remains within your environment (on-prem or private cloud).
