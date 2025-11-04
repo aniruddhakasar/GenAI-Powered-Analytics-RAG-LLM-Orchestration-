@@ -64,3 +64,78 @@ venv\Scripts\activate       # For Windows
 
 # Install dependencies
 pip install -r requirements.txt
+
+
+🚀 Usage
+# Run the application
+python app.py
+
+
+Then open your browser and navigate to:
+
+http://localhost:8501
+
+
+Ask natural-language questions about your data and explore real-time insights!
+
+🧱 Architecture
+            ┌───────────────────────────┐
+            │       User Query          │
+            └────────────┬──────────────┘
+                         │
+             ┌───────────▼────────────┐
+             │     LLM Orchestrator   │
+             └───────────┬────────────┘
+                         │
+           ┌─────────────▼──────────────┐
+           │    RAG Pipeline (VectorDB) │
+           └─────────────┬──────────────┘
+                         │
+            ┌────────────▼────────────┐
+            │ Data Sources (SQL, Docs)│
+            └─────────────────────────┘
+
+🔒 Security
+
+Data remains within your environment (on-prem or private cloud).
+
+No external API calls unless explicitly configured.
+
+Support for role-based access and audit logging.
+
+📈 Roadmap
+
+ Add real-time dashboard visualization
+
+ Integrate voice-based querying
+
+ Support multimodal (image + text) insights
+
+ Add fine-tuning pipeline for domain-specific LLMs
+
+🤝 Contributing
+
+Contributions are welcome!
+If you’d like to improve features or documentation:
+
+Fork the repo
+
+Create your feature branch (git checkout -b feature/new-feature)
+
+Commit your changes
+
+Push to your branch and open a PR
+
+📜 License
+
+This project is licensed under the MIT License — see the LICENSE
+ file for details.
+
+💡 Vision
+
+To empower every business user to interact, analyze, and act on data using Generative AI intelligence — turning analytics from data-driven to insight-driven.
+
+
+---
+
+Would you like me to also generate a matching **`requirements.txt`** file with the dependencies mentioned in this README (LangChain, LlamaIndex, FAISS, Streamlit, etc
