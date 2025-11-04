@@ -54,7 +54,7 @@ Built for **on-premise and cloud deployments**, it’s ideal for enterprise envi
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/genai-analytics-platform.git
+git clone https://github.com/aniruddhakasar/GenAI-Powered-Analytics-RAG-LLM-Orchestration-.git
 cd genai-analytics-platform
 
 # (Optional) Create a virtual environment
