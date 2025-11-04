@@ -3,13 +3,11 @@ GenAI-powered analytics platform using RAG and LLM orchestration to query struct
 
 
 
-Perfect ✅ Here’s a complete, **ready-to-upload `README.md` file** for your GitHub repository — professional, clean, and tailored for your **GenAI-powered analytics platform (RAG + LLM orchestration)**.
 
-You can copy this as is into your repo.
 
 ---
 
-````markdown
+
 # 🚀 GenAI-Powered Analytics Platform  
 **RAG + LLM Orchestration for Intelligent and Conversational Business Insights**
 
