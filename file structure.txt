@@ -1,0 +1,64 @@
+genai-analytics-platform/
+│
+├── 📄 README.md
+├── 📄 requirements.txt
+├── 📄 .gitignore
+├── 📄 LICENSE
+├── 📄 config.yaml                # Configuration for model, DB, API keys, etc.
+│
+├── 📁 data/
+│   ├── raw/                      # Original unprocessed datasets
+│   ├── processed/                # Cleaned or vectorized data
+│   └── sample/                   # Sample datasets for testing
+│
+├── 📁 src/
+│   ├── __init__.py
+│   │
+│   ├── 📁 core/                  # Core backend components
+│   │   ├── llm_manager.py        # Handles LLM orchestration and API calls
+│   │   ├── rag_pipeline.py       # RAG pipeline (retrieval + generation)
+│   │   ├── embeddings_module.py  # Embedding model setup (FAISS/Chroma)
+│   │   ├── vector_store.py       # Vector DB indexing and similarity search
+│   │   └── data_loader.py        # Loads and preprocesses structured/unstructured data
+│   │
+│   ├── 📁 analytics/             # Analytics and insights logic
+│   │   ├── insight_generator.py  # Converts raw outputs to contextual insights
+│   │   ├── text_summarizer.py    # Summarizes text and reports
+│   │   └── kpi_extractor.py      # Extracts key metrics and KPIs
+│   │
+│   ├── 📁 utils/                 # Utility and helper functions
+│   │   ├── app_logging.py         # Centralized logging
+│   │   ├── config_loader.py      # Loads YAML configurations
+│   │   ├── text_cleaner.py       # Text preprocessing utilities
+│   │   └── security_utils.py     # Data encryption, access control (if needed)
+│   │
+│   └── 📁 api/                   # API layer for integrations
+│       ├── rest_api.py           # FastAPI or Flask routes
+│       └── auth.py               # Authentication and token management
+│
+├── 📁 ui/
+│   ├── app.py                    # Streamlit/Gradio frontend app
+│   ├── components/               # Reusable UI elements
+│   └── assets/                   # CSS, images, and icons
+│
+├── 📁 models/
+│   ├── model_registry.json       # Model versions and configs
+│   ├── fine_tuned/               # Custom fine-tuned LLMs
+│   └── embeddings/               # Saved embeddings or indexes
+│
+├── 📁 notebooks/
+│   ├── data_exploration.ipynb    # EDA and visualization
+│   ├── model_testing.ipynb       # LLM and retrieval tests
+│   └── evaluation.ipynb          # Performance benchmarking
+│
+├── 📁 tests/
+│   ├── test_rag_pipeline.py
+│   ├── test_llm_manager.py
+│   ├── test_api.py
+│   └── test_utils.py
+│
+└── 📁 deployment/
+    ├── Dockerfile                # Container setup
+    ├── docker-compose.yml
+    ├── kubernetes.yaml           # Optional K8s config
+    └── setup.sh                  # Auto-deployment script
